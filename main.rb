@@ -11,6 +11,7 @@ class Game < Chingu::Window
 	def initialize
 		super
 		push_game_state(MainMenu)
+		self.caption = "Dungeon Game WIP"
 	end
 
 	def needs_cursor?
