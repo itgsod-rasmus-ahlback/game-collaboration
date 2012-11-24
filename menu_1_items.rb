@@ -1,4 +1,4 @@
-class Menu_item1 < Chingu::GameObject
+class Menu_start < Chingu::GameObject
 	trait :bounding_box 
 	traits :collision_detection
 
@@ -9,7 +9,7 @@ class Menu_item1 < Chingu::GameObject
 	end
 end
 
-class Menu_item2 < Chingu::GameObject
+class Menu_exit < Chingu::GameObject
 	trait :bounding_box 
 	traits :collision_detection
 
