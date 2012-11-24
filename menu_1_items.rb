@@ -9,14 +9,14 @@ class Menu_start < Chingu::GameObject
 	end
 end
 
-class Menu_exit < Chingu::GameObject
+
+class Menu_chars < Chingu::GameObject
 	trait :bounding_box 
 	traits :collision_detection
 
 	def setup
-		@image = Gosu::Image["exit_button.png"]
-		@x = 400 - 50
+		@image = Gosu::Image["characters_button.png"]
+		@x = $window.width/2 - 60
 		@y = 400
 	end
 end
-

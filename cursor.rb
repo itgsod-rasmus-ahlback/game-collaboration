@@ -4,6 +4,7 @@ class Cursor < Chingu::GameObject
 
 	def setup
 		@image = Gosu::Image["cursor.png"]
+		@zorder = 300
 	end
 
 	def update
