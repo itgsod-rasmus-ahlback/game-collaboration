@@ -1,4 +1,15 @@
 require 'chingu'
+
+file = Dir.glob("./menus/*.rb")
+file.each do |file_object|
+	require file_object
+end
+
+file = Dir.glob("./menus/menu_items/*.rb")
+file.each do |file_object|
+	require file_object
+end
+
 file = Dir.glob("./*.rb")
 file.each do |file_object|
 	require file_object
