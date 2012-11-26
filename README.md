@@ -1,6 +1,6 @@
 # Dungeon Game
 
-Ett spel som har en simpel menu, och bakåt funktion.
+Ett spel som har en simpel meny
 
 + exit --> stänger spelet
 + back --> går bakåt i spelet
