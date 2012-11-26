@@ -1,5 +1,4 @@
 
-
 class List_characters < Chingu::GameState
 	def initialize
 		super

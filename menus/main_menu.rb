@@ -13,13 +13,13 @@ class MainMenu < Chingu::GameState
 
 	def next
 		@cursor.each_collision(@menu1) do 
-			push_game_state(StartGame)
+			switch_game_state(StartGame)
 		end
 		@cursor.each_collision(@menu2) do
 			exit
 		end
 		@cursor.each_collision(@menu3) do
-			push_game_state(List_characters)
+			switch_game_state(List_characters)
 		end
 	end
 

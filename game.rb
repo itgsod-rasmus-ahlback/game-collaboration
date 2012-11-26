@@ -13,7 +13,7 @@ class Gameplay < Chingu::GameState
 	end
 
 	def needs_cursor?
-    	true
+    	false
   	end
 
   	def next

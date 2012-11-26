@@ -10,5 +10,6 @@ class Cursor < Chingu::GameObject
 	def update
 		@x = $window.mouse_x
 		@y = $window.mouse_y
+
 	end
 end
