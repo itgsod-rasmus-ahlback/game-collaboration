@@ -6,6 +6,14 @@ class Menu_exit < Chingu::GameObject
 		@image = Gosu::Image["./buttons/exit_button.png"]
 		@x = 700
 		@y = 50
+		@cursor = Cursor.create
+	end
+
+	def check
+		self.each_collision(@cursor) do
+			@cursor.destroy
+			exit
+		end
 	end
 end
 
@@ -17,5 +25,13 @@ class Menu_back < Chingu::GameObject
 		@image = Gosu::Image["./buttons/back_button.png"]
 		@x = 100
 		@y = 100
+		@cursor = Cursor.create
+	end
+
+	def check
+		self.each_collision(@cursor) do
+			@cursor.destroy
+			$window.switch_game_state(MainMenu)
+		end
 	end
 end
