@@ -7,7 +7,7 @@ class MorganGame < Chingu::GameState
 		@@windowX,  @@windowY = 800, 600
 		@@ball = false
 		super
-		self.input = {esc: :back}
+		self.input = {esc: :back, :e :edit}
 		Background_BB.create
 		@paddle = Paddle.create(:factor_x => 2)
 		@score = 0
