@@ -1,11 +1,7 @@
-require 'chingu'
-
-
 class Gameplay < Chingu::GameState
 	# Constructor
 	def initialize
 		super
-		
 		self.input = {esc: :next}
 		@background_image = Background.create
 		@player = Player.create

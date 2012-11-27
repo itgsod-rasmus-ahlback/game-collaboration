@@ -39,3 +39,24 @@ class Menu_new < Chingu::GameObject
 		end
 	end
 end
+
+class Menu_lund < Chingu::GameObject
+	trait :bounding_box 
+	traits :collision_detection
+
+	def setup
+		@image = Gosu::Image["./asteroid.png"]
+		@x = 400
+		@y = 550
+		self.zorder = 10
+		@cursor = Cursor.create
+	end
+
+	def check
+		self.each_collision(@cursor) do
+			@cursor.destroy
+			$window.switch_game_state(Lund)
+		end
+	end
+end
+

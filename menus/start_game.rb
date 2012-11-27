@@ -1,13 +1,17 @@
 class StartGame < Chingu::GameState
-	def initialize
-		super
-		@menu = [Menu_exit.create,Menu_back.create,Menu_load.create,Menu_new.create]
-		@cursor = Cursor.create
+	# def initialize
+	# 	super
+	# 	@menu = [Menu_exit.create,Menu_back.create,Menu_load.create,Menu_new.create]
+	# 	@menu << Menu_lund.create
+	# 	@cursor = Cursor.create
 
-	end
+	# end
 
 	def setup
 		self.input = {esc: :exit, mouse_left: :next}
+		@menu = [Menu_exit.create,Menu_back.create,Menu_load.create,Menu_new.create]
+		@menu << Menu_lund.create
+		@cursor = Cursor.create
 	end
 
 	def next
@@ -16,5 +20,9 @@ class StartGame < Chingu::GameState
 				menu.check
 			end
 		end
+	end
+
+	def update
+		super
 	end
 end
