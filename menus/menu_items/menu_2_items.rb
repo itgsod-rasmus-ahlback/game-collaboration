@@ -12,7 +12,7 @@ class Menu_load < Chingu::GameObject
 	def check
 		self.each_collision(@cursor) do
 		@cursor.destroy
-		$window.switch_game_state(text)
+		$window.switch_game_state(MorganGame)
 		end
 	end
 
