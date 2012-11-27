@@ -15,10 +15,6 @@ class Menu_load < Chingu::GameObject
 		$window.switch_game_state(MorganGame)
 		end
 	end
-
-	def text
-		puts "jupp"
-	end
 end
 
 class Menu_new < Chingu::GameObject

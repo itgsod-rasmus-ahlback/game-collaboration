@@ -33,6 +33,5 @@ class Menu_back < Chingu::GameObject
 			@cursor.destroy
 			$window.switch_game_state(MainMenu)
 		end
-		puts "this is the back class"
 	end
 end

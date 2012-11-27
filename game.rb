@@ -4,6 +4,7 @@ require "chingu"
 class MorganGame < Chingu::GameState
 	#Constructor
 	def initialize
+		@lock = false
 		@@windowX,  @@windowY = 800, 600
 		@@ball = false
 		super
@@ -42,7 +43,7 @@ class MorganGame < Chingu::GameState
 	end
 
 	def update
-		if Brick.size == 0 then Text.create("You Win! you got a score of #{@score}", x: 500, y: 100)end
+		if Brick.size == 0 and @lock != true then Text.create("You Win! you got a score of #{@score}", x: 500, y: 100) and @lock = true end
 		if Brick.size == 0
 			Ball.each do |kill_ball|
 				kill_ball.destroy
