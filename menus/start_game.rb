@@ -9,8 +9,9 @@ class StartGame < Chingu::GameState
 
 	def setup
 		self.input = {esc: :exit, mouse_left: :next}
-		@menu = [Menu_exit.create,Menu_back.create,Menu_load.create,Menu_new.create]
+		@menu = [Menu_exit.create,Menu_load.create,Menu_new.create]
 		@menu << Menu_lund.create
+		@menu << Menu_back.create
 		@cursor = Cursor.create
 	end
 
@@ -24,5 +25,6 @@ class StartGame < Chingu::GameState
 
 	def update
 		super
+		$window.caption = "Selection screen, FPS: #{$window.fps}"
 	end
 end

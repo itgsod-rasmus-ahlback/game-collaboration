@@ -5,7 +5,7 @@ class Lund < Chingu::GameState
 	# Constructor
 	def initialize
 		super
-		$window.caption = "Into Space"
+		$window.caption = "Into space 		FPS: #{$window.fps}"
 		self.input = {esc: :back}
 		@background_image = Background_lund.create
 		@player = Player_lund.create
@@ -29,7 +29,20 @@ class Lund < Chingu::GameState
 	end
 
 	def back
-		$window.switch_game_state(MainMenu) and Lund.destroy
+		pop_game_state
+		Background_lund.each do |background|
+			background.destroy
+		end
+		Victory.each do |end_victory|
+			end_victory.destroy
+		end
+		Asteroide.each do |kill|
+			kill.destroy
+		end
+		Player_lund.each do |kill|
+			kill.destroy
+		end
+		$window.switch_game_state(StartGame)
 	end
 end
 
@@ -141,8 +154,8 @@ class Asteroide < Chingu::GameObject
 	end
 
 	def update
-		@x %= 640
-		@y %= 480
+		@x %= 800
+		@y %= 600
 	end
 end
 

@@ -42,7 +42,12 @@ class MorganGame < Chingu::GameState
 	end
 
 	def update
-		if Brick.size == 0 then abort("You Win! you got a score of #{@score}") end
+		if Brick.size == 0 then Text.create("You Win! you got a score of #{@score}", x: 500, y: 100)end
+		if Brick.size == 0
+			Ball.each do |kill_ball|
+				kill_ball.destroy
+			end
+		end
 		super
 
 		Paddle.each_bounding_box_collision(Powerup) do |paddle, powerup|
@@ -142,7 +147,7 @@ class Ball < Chingu::GameObject
 
 	def setup
 		@image = Gosu::Image["./lib/ball#{rand(2..4)}.png"]
-		self.velocity_y = -10
+		self.velocity_y = -20
 	end
 
 	def update

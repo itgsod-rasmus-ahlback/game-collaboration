@@ -4,8 +4,8 @@ class Menu_load < Chingu::GameObject
 
 	def setup
 		@image = Gosu::Image["./buttons/load_button.png"]
-		@x = 350
-		@y = 200
+		@x = 300
+		@y = 300
 		@cursor = Cursor.create
 	end
 
@@ -26,8 +26,8 @@ class Menu_new < Chingu::GameObject
 	traits :collision_detection
 
 	def setup
-		@image = Gosu::Image["./buttons/new_char_button.png"]
-		@x = 350
+		@image = Gosu::Image["./thumbnails/goc.png"]
+		@x = 100
 		@y = 300
 		@cursor = Cursor.create
 	end
@@ -46,8 +46,8 @@ class Menu_lund < Chingu::GameObject
 
 	def setup
 		@image = Gosu::Image["./asteroid.png"]
-		@x = 400
-		@y = 550
+		@x = 200
+		@y = 300
 		self.zorder = 10
 		@cursor = Cursor.create
 	end

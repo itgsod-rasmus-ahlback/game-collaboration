@@ -31,7 +31,8 @@ class Menu_back < Chingu::GameObject
 	def check
 		self.each_collision(@cursor) do
 			@cursor.destroy
-			$window.switch_game_state(StartGame)
+			$window.switch_game_state(MainMenu)
 		end
+		puts "this is the back class"
 	end
 end
