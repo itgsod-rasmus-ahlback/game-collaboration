@@ -20,6 +20,14 @@ class Gameplay < Chingu::GameState
   		switch_game_state(StartGame)
   	end
 
+  	def update
+  		super
+  		Laser.each_collision(Cloud) do |laser, cloud|
+  			laser.destroy
+  			cloud.destroy
+  		end
+  	end
+
 end
 
 class Player < Chingu::GameObject
@@ -42,6 +50,8 @@ class Player < Chingu::GameObject
 		@counter = 0
 		self.zorder = 2
 	end
+
+
 
 	def fire
 		Laser.create(x: self.x, y: self.y, angle: self.angle)
@@ -100,7 +110,7 @@ class Background < Chingu::GameObject
 end
 
 class Laser < Chingu::GameObject
-	has_traits :velocity, :timer
+	has_traits :velocity, :timer, :bounding_circle
 	traits :collision_detection
 	def setup
 		self.collidable = true
@@ -113,7 +123,7 @@ class Laser < Chingu::GameObject
 end
 
 class Cloud < Chingu::GameObject
-	has_traits :velocity
+	has_traits :velocity, :bounding_circle
 	traits :collision_detection
 
 	def setup
