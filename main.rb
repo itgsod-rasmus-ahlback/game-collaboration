@@ -30,9 +30,6 @@ class Game < Chingu::Window
 		self.caption = "Dungeon Game WIP"
 	end
 
-	def needs_cursor?
-		false
-	end
 end
 
 

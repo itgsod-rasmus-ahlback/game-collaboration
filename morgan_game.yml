@@ -1,0 +1,121 @@
+---
+- MetalBrick:
+    :x: 192.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- MetalBrick:
+    :x: 252.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- MetalBrick:
+    :x: 320.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- MetalBrick:
+    :x: 384.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- MetalBrick:
+    :x: 448.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- MetalBrick:
+    :x: 512.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- MediumBrick:
+    :x: 288.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- MetalBrick:
+    :x: 256.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- HardBrick:
+    :x: 288.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- MetalBrick:
+    :x: 64.0
+    :y: 192.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- RegularBrick:
+    :x: 320.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- RegularBrick:
+    :x: 320.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1.0
+    :factor_y: 1.0
+    :alpha: 255
+- MetalBrick:
+    :x: 416.0
+    :y: 512.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- MetalBrick:
+    :x: 160.0
+    :y: 512.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- MetalBrick:
+    :x: 320.0
+    :y: 480.0
+    :angle: 325
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255

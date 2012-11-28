@@ -1,6 +1,14 @@
 require "chingu"
+
+include Gosu
+include Chingu
 		@@windowX,  @@windowY = 800, 600
 		@@ball = false
+
+
+
+
+
 class MorganGame < Chingu::GameState
 	#Constructor
 	def initialize
@@ -8,43 +16,31 @@ class MorganGame < Chingu::GameState
 		@@windowX,  @@windowY = 800, 600
 		@@ball = false
 		super
-		self.input = {esc: :back, :e :edit}
-		Background_BB.create
+		load_game_objects
+		self.input = {esc: :back, e: :edit}
+		BackgroundBB.create(:zorder => 0)
 		@paddle = Paddle.create(:factor_x => 2)
 		@score = 0
-		x = rand(32..50)
-		y = 12 * 3
-		puts fps
-		rand(20..40).times do
-			Brick.create(x: x, y: y)
-			x += rand(64..70)
-			if x >= @@windowX - 50
-				y += 30
-				x = rand(32..50)
-			end
-		end
-		Brick.each do |brick|
-			brick.imgchange(rand(0..2)) 
-		end
+		@brick = MetalBrick
+	end
+
+
+	def edit
+		 push_game_state(GameStates::Edit.new(:grid => [32,32], :classes => [RegularBrick, MetalBrick, HardBrick, MediumBrick]))
 	end
 
 	def back
-		pop_game_state
-		Brick.each do |brick|
-			brick.destroy
-		end
-		Ball.each do |ball|
-			ball.destroy
-		end
-		Paddle.each do |paddle|
-			paddle.destroy
-		end
+	pop_game_state
+	puts "objects before: #{game_objects.visible_game_objects}"
+	game_objects.destroy_all
+	puts "objects after: #{game_objects.visible_game_objects}"
 		switch_game_state(StartGame)
 	end
 
 	def update
-		if Brick.size == 0 and @lock != true then Text.create("You Win! you got a score of #{@score}", x: 500, y: 100) and @lock = true end
-		if Brick.size == 0
+
+		if RegularBrick.size == 0 and @lock != true then Text.create("You Win! you got a score of #{@score}", x: 500, y: 100) and @lock = true end
+		if RegularBrick.size == 0
 			Ball.each do |kill_ball|
 				kill_ball.destroy
 			end
@@ -62,33 +58,53 @@ class MorganGame < Chingu::GameState
 		Ball.each_bounding_box_collision(Paddle) do |ball, paddle|
 			ball.bounce(@paddle.vel)
 		end
-		Ball.each_bounding_box_collision(Brick) do |ball, brick|
+
+
+		Ball.each_bounding_box_collision(RegularBrick) {@brick = RegularBrick} 
+		Ball.each_bounding_box_collision(MetalBrick) {@brick = MetalBrick} 
+		Ball.each_bounding_box_collision(HardBrick) {@brick = HardBrick} 
+		Ball.each_bounding_box_collision(MediumBrick) {@brick = MediumBrick} 
+
+
+		Ball.each_bounding_box_collision(@brick) do |ball, brick|
 			ball.bounce
+			if @brick == RegularBrick
+				powerup = rand(100)
 
-			powerup = rand(100)
-
-			if powerup.between?(1, 10)
-				Powerup.create(x: brick.x, y: brick.y)
-			end
-			img = brick.img
-			if img == 0
+				if powerup.between?(1, 10)
+					Powerup.create(x: brick.x, y: brick.y)
+				end
+					brick.destroy
+					@score += 1
+			elsif @brick == HardBrick
+				powerup = rand(100)
+				if powerup.between?(1, 10)
+					Powerup.create(x: brick.x, y: brick.y)
+				end
+				MediumBrick.create(x: brick.x, y: brick.y)
 				brick.destroy
 				@score += 1
-			else
-				brick.imgchange(img - 1)
-				@score += 1
-			end
 
+			elsif @brick == MediumBrick
+				powerup = rand(100)
+				if powerup.between?(1, 10)
+					Powerup.create(x: brick.x, y: brick.y)
+				end
+				RegularBrick.create(x: brick.x, y: brick.y)
+				brick.destroy
+				@score += 1
+
+			end
 		end
 		$window.caption = "FPS: #{$window.fps} Score: #{@score}"
 	end
 
 end
 
-class Background_BB < Chingu::GameObject
+class BackgroundBB < Chingu::GameObject
 	def setup
 		@x, @y = @@windowX /2, @@windowY / 2
-		@image = Gosu::Image["./lib/background.jpg"]
+		@image = Image["./lib/background.jpg"]
 	end
 end
 
@@ -99,7 +115,7 @@ class Paddle < Chingu::GameObject
 	def setup
 		@x, @y = @@windowX / 2, @@windowY - 7.5
 		@shootupgrade = false
-		@image = Gosu::Image["./lib/paddle.png"]
+		@image = Image["./lib/paddle.png"]
 		@vel = 0
 		@speed = 10
 		@moving = false
@@ -111,7 +127,7 @@ class Paddle < Chingu::GameObject
 
 
 		if @shootupgrade == true 
-			after (4500) {@image = Gosu::Image[".lib/paddle.png"]}
+			after (4500) {@image = Image[".lib/paddle.png"]}
 		end
 
 		if x != $window.mouse_x
@@ -144,14 +160,17 @@ end
 
 class Ball < Chingu::GameObject
 
-	has_traits :velocity, :collision_detection, :bounding_box
+	has_traits :velocity, :collision_detection, :bounding_box, :timer
 
 	def setup
-		@image = Gosu::Image["./lib/ball#{rand(2..4)}.png"]
+		@lock = false
+		@image = Image["./lib/ball#{rand(2..4)}.png"]
 		self.velocity_y = -20
 	end
 
 	def update
+		after(10) {@lock = false}
+		puts @lock
 		if self.y <= 0 then self.velocity_y *= -1 end
 		if self.x <= 0 or self.x >= @@windowX then self.velocity_x *= -1 end
 		if self.y >= @@windowY
@@ -161,32 +180,20 @@ class Ball < Chingu::GameObject
 	end
 
 	def bounce(x = 0)
-		if x > 0 and x < 5
-			self.velocity_x += x
-		elsif x < 0 and x > -5
-			self.velocity_x -= x
-		elsif x > 5 or x < - 5
-			self.velocity_x = x
-		end 
-		self.velocity_y *= -1
-		
-		puts "x = #{x}"
+		unless @lock
+			if x > 0 and x < 5
+				self.velocity_x += x
+			elsif x < 0 and x > -5
+				self.velocity_x -= x
+			elsif x > 5 or x < - 5
+				self.velocity_x = x
+			end 
+			self.velocity_y *= -1
+			@lock = true
+			
+			puts "x = #{x}"
+		end
 	end
 end
 
-class Brick < Chingu::GameObject
-	attr_reader :x, :y, :img
-	has_traits :collision_detection, :bounding_box
-	def setup
-		@img = 0
-	end
 
-	def imgchange (img)
-		if img == 0 then image = "./lib/bricks/brick.png" end
-		if img == 1 then image = "./lib/bricks/brickbroken.png" end
-		if img == 2 then image = "./lib/bricks/brickhard.png" end
-		@img = img
-		@image = Gosu::Image[image]
-	end
-
-end
