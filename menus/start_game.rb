@@ -13,6 +13,7 @@ class StartGame < Chingu::GameState
 		@menu << Menu_lund.create
 		@menu << Menu_back.create
 		@cursor = Cursor.create
+		MenuBackground.create
 	end
 
 	def next

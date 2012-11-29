@@ -6,6 +6,7 @@ class MainMenu < Chingu::GameState
 		@menu << Menu_exit.create
 		@menu << Menu_chars.create
 		@cursor = Cursor.create
+		MenuBackground.create
 	end
 
 	def setup
