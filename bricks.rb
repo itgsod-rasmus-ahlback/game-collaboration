@@ -1,30 +1,18 @@
-class MetalBrick < Chingu::GameObject
-		has_traits :collision_detection, :bounding_box
+class Brick < Chingu::GameObject
+		has_traits :collision_detection, :bounding_box, :effect
 	def setup
-		@image = Image["./lib/bricks/Metal.png"]
+		@image = Image["./lib/bricks/#{self.filename}.png"]
+		self.scale = 1
 	end
 end
 
 
 
-class RegularBrick < Chingu::GameObject
-		has_traits :collision_detection, :bounding_box
-	def setup
-		@image = Image["./lib/bricks/Regular.png"]
-	end
-end
-
-class HardBrick < Chingu::GameObject
-		has_traits :collision_detection, :bounding_box
-	def setup
-		@image = Image["./lib/bricks/Hard.png"]
-	end
-end
-
-class MediumBrick < Chingu::GameObject
-		has_traits :collision_detection, :bounding_box
-	def setup
-		@image = Image["./lib/bricks/Medium.png"]
-	end
-end
-
+class YellowBrick < Brick; end
+class PinkBrick < Brick; end
+class GreenBrick < Brick; end
+class OrangeBrick < Brick; end
+class RedBrick < Brick; end
+class BlueBrick < Brick; end
+class BrownBrick < Brick; end
+class PurpleBrick < Brick; end

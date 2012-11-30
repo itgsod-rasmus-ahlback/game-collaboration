@@ -4,29 +4,53 @@ include Gosu
 include Chingu
 		@@windowX,  @@windowY = 800, 600
 		@@ball = false
-
-
-
-
+		@@font = "pixelated"
+		@@size = 20
 
 class MorganGame < Chingu::GameState
+	def initialize
+		super
+		BackgroundBB.create
+		Logo.create(:x => 320, :y => 0, :image => "lib/logo.png")
+		SimpleMenu.create(:y => 200, :factor => 2, :menu_items => {"New Game" => :new, "Exit" => :exit})
+	end
+	def new
+		$window.switch_game_state(MorganGame2)
+	end
+end
+
+class Logo < Chingu::BasicGameObject
+  trait :simple_sprite
+end
+
+class Score < Chingu::BasicGameObject
+	trait :simple_sprite
+end
+
+
+class MorganGame2 < Chingu::GameState
 	#Constructor
 	def initialize
 		@lock = false
 		@@windowX,  @@windowY = 800, 600
 		@@ball = false
-		super
-		load_game_objects
-		self.input = {esc: :back, e: :edit}
-		BackgroundBB.create(:zorder => 0)
-		@paddle = Paddle.create(:factor_x => 2)
 		@score = 0
-		@brick = MetalBrick
+		super
+		load_game_objects(:file => "levels/level1.yml")
+		self.input = {esc: :back, e: :edit}
+
+		BackgroundBB.create(:zorder => 0)
+		Score.create(:x => 48, :y => 17, :image => "lib/score.png")
+		@scoretext = Text.create(@score)
+		@paddle = Paddle.create(:factor_x => 2)
+		@brick = GreenBrick
 	end
 
 
+
+
 	def edit
-		 push_game_state(GameStates::Edit.new(:grid => [32,32], :classes => [RegularBrick, MetalBrick, HardBrick, MediumBrick]))
+		push_game_state(GameStates::Edit.new( :file => "levels/level1.yml", :classes => [YellowBrick, PinkBrick, GreenBrick, OrangeBrick, RedBrick, BlueBrick, BrownBrick, PurpleBrick]))
 	end
 
 	def back
@@ -38,9 +62,9 @@ class MorganGame < Chingu::GameState
 	end
 
 	def update
-
-		if RegularBrick.size == 0 and @lock != true then Text.create("You Win! you got a score of #{@score}", x: 500, y: 100) and @lock = true end
-		if RegularBrick.size == 0
+		if YellowBrick.size == 0 and PinkBrick.size == 0 and GreenBrick.size == 0 and OrangeBrick.size == 0 and RedBrick.size == 0 and BlueBrick.size == 0 and BrownBrick.size == 0 and PurpleBrick.size == 0
+			if @lock == false then Text.create("Congratulations You Won!", :x => @@windowX/2, :y => @@windowY/2, :factor => 2) end
+				@lock = true
 			Ball.each do |kill_ball|
 				kill_ball.destroy
 			end
@@ -49,76 +73,68 @@ class MorganGame < Chingu::GameState
 
 		Paddle.each_bounding_box_collision(Powerup) do |paddle, powerup|
 
-			if powerup.power == 1 then @paddle.factor_x = 3 end
-			if powerup.power == 2 then @paddle.factor_x = 1 end
+			if powerup.power == 1 then @paddle.factor_x = 3 end #growthpower
+			if powerup.power == 2 then @paddle.factor_x = 1 end #Shrinkpower
 			powerup.destroy
 		end
 
 
 		Ball.each_bounding_box_collision(Paddle) do |ball, paddle|
+			Gosu::Sound.new("lib/bounce.wav").play
 			ball.bounce(@paddle.vel)
 		end
 
+        #Changes the collision type based on the block the ball hits
+		Ball.each_bounding_box_collision(GreenBrick) {@brick = GreenBrick} #1
+		Ball.each_bounding_box_collision(BlueBrick) {@brick = BlueBrick} #2
+		Ball.each_bounding_box_collision(YellowBrick) {@brick = YellowBrick} #3
+		Ball.each_bounding_box_collision(RedBrick) {@brick = RedBrick} #4
+		Ball.each_bounding_box_collision(BrownBrick) {@brick = BrownBrick} #5
+		Ball.each_bounding_box_collision(OrangeBrick) {@brick = OrangeBrick} #6
+		Ball.each_bounding_box_collision(PinkBrick) {@brick = PinkBrick} #7
+		Ball.each_bounding_box_collision(PurpleBrick) {@brick = PurpleBrick}
 
-		Ball.each_bounding_box_collision(RegularBrick) {@brick = RegularBrick} 
-		Ball.each_bounding_box_collision(MetalBrick) {@brick = MetalBrick} 
-		Ball.each_bounding_box_collision(HardBrick) {@brick = HardBrick} 
-		Ball.each_bounding_box_collision(MediumBrick) {@brick = MediumBrick} 
 
-
+		#destroys the block, play a little sound then bounce the ball.
 		Ball.each_bounding_box_collision(@brick) do |ball, brick|
 			ball.bounce
-			if @brick == RegularBrick
+			brick.destroy
+			@score += 1
+				Gosu::Sound.new("lib/destroy.wav").play
 				powerup = rand(100)
 
 				if powerup.between?(1, 10)
 					Powerup.create(x: brick.x, y: brick.y)
 				end
-					brick.destroy
-					@score += 1
-			elsif @brick == HardBrick
-				powerup = rand(100)
-				if powerup.between?(1, 10)
-					Powerup.create(x: brick.x, y: brick.y)
-				end
-				MediumBrick.create(x: brick.x, y: brick.y)
-				brick.destroy
-				@score += 1
-
-			elsif @brick == MediumBrick
-				powerup = rand(100)
-				if powerup.between?(1, 10)
-					Powerup.create(x: brick.x, y: brick.y)
-				end
-				RegularBrick.create(x: brick.x, y: brick.y)
-				brick.destroy
-				@score += 1
-
-			end
 		end
+
+		@scoretext.destroy
+		@scoretext = Text.create(@score, :x => 145, :y => 9, :factor => 2, :zoder => 10)
 		$window.caption = "FPS: #{$window.fps} Score: #{@score}"
 	end
 
 end
-
 class BackgroundBB < Chingu::GameObject
 	def setup
-		@x, @y = @@windowX /2, @@windowY / 2
-		@image = Image["./lib/background.jpg"]
+		@x, @y = @@windowX /2, @@windowY / 2 + 50
+		@image = Image["./lib/background.png"]
 	end
 end
 
+
 class Paddle < Chingu::GameObject
 	attr_accessor :vel, :ball_exist, :shootupgrade
-	has_traits :collision_detection, :bounding_box, :timer
+	has_traits :collision_detection, :bounding_box, :timer, :effect
 	#meta-constructor
 	def setup
-		@x, @y = @@windowX / 2, @@windowY - 7.5
+		@x, @y = @@windowX / 2, @@windowY - 50
 		@shootupgrade = false
 		@image = Image["./lib/paddle.png"]
 		@vel = 0
 		@speed = 10
 		@moving = false
+		self.scale = 2
+		self.factor_x = 2
 		self.input = {mouse_left: :launch}
 	end
 
@@ -160,22 +176,30 @@ end
 
 class Ball < Chingu::GameObject
 
-	has_traits :velocity, :collision_detection, :bounding_box, :timer
+	has_traits :velocity, :collision_detection, :bounding_box, :timer, :effect
 
 	def setup
 		@lock = false
-		@image = Image["./lib/ball#{rand(2..4)}.png"]
-		self.velocity_y = -20
+		@image = Image["./lib/ball1.png"]
+		self.scale = 2
+		self.velocity_y = -10
 	end
 
 	def update
 		after(10) {@lock = false}
 		puts @lock
-		if self.y <= 0 then self.velocity_y *= -1 end
-		if self.x <= 0 or self.x >= @@windowX then self.velocity_x *= -1 end
+		if self.y <= 0 + 111
+		self.velocity_y *= -1
+		Gosu::Sound.new("lib/bounce.wav").play
+		end
+		if self.x <= 11 or self.x >= @@windowX - 11 
+			self.velocity_x *= -1
+			Gosu::Sound.new("lib/bounce.wav").play
+		end
 		if self.y >= @@windowY
 			@@ball = false
 			self.destroy
+			Gosu::Sound.new("lib/missed.wav").play
 		end
 	end
 

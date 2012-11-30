@@ -3,7 +3,7 @@ class Menu_load < Chingu::GameObject
 	traits :collision_detection
 
 	def setup
-		@image = Gosu::Image["./buttons/load_button.png"]
+		@image = Gosu::Image["moggeslogo.png"]
 		@x = 300
 		@y = 300
 		@cursor = Cursor.create

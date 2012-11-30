@@ -1,0 +1,1601 @@
+---
+- BlueBrick:
+    :x: 288.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 256.0
+    :y: 368.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 256.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 256.0
+    :y: 336.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 288.0
+    :y: 336.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 256.0
+    :y: 320.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 288.0
+    :y: 320.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 384.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 368.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 368.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 336.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 336.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 320.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 320.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 304.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 304.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 256.0
+    :y: 304.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 288.0
+    :y: 304.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 400.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 432.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 464.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 432.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 400.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 464.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 432.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 400.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 288.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 272.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 304.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 304.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 320.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 320.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 336.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 336.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 352.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 368.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 368.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 384.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 384.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 400.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 400.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 416.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 416.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 432.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 432.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 448.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 448.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 464.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 464.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 480.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 480.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 464.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 464.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 480.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 464.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 480.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 480.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 464.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 400.0
+    :y: 448.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 400.0
+    :y: 464.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 432.0
+    :y: 464.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 432.0
+    :y: 448.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 432.0
+    :y: 432.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 432.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 416.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 400.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 352.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 368.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 352.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 384.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 384.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 400.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 384.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 368.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 320.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 304.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 352.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 336.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 336.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 320.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 464.0
+    :y: 416.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 464.0
+    :y: 448.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 464.0
+    :y: 432.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 336.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 176.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 240.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 240.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 208.0
+    :y: 208.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 208.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 208.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 208.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 192.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 192.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 192.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 192.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 176.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 176.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 176.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 176.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 160.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 160.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 160.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 160.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 400.0
+    :y: 160.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 432.0
+    :y: 160.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 464.0
+    :y: 176.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 176.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 176.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 192.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 192.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 192.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 368.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 304.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 304.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 304.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 320.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 400.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 384.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 368.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 416.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 208.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 208.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 208.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 528.0
+    :y: 240.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 240.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 240.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 592.0
+    :y: 208.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 560.0
+    :y: 176.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 160.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 464.0
+    :y: 160.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 240.0
+    :y: 176.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 272.0
+    :y: 496.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 496.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 496.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 304.0
+    :y: 512.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 400.0
+    :y: 480.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 320.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 336.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 464.0
+    :y: 304.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 496.0
+    :y: 352.0
+    :angle: 360
+    :zorder: 101
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 288.0
+    :y: 368.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 256.0
+    :y: 384.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 384.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 400.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 336.0
+    :y: 416.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 368.0
+    :y: 400.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- OrangeBrick:
+    :x: 48.0
+    :y: 184.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- OrangeBrick:
+    :x: 80.0
+    :y: 200.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- OrangeBrick:
+    :x: 48.0
+    :y: 232.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- OrangeBrick:
+    :x: 80.0
+    :y: 248.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- RedBrick:
+    :x: 48.0
+    :y: 280.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- RedBrick:
+    :x: 80.0
+    :y: 296.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- RedBrick:
+    :x: 80.0
+    :y: 328.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- GreenBrick:
+    :x: 48.0
+    :y: 216.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- YellowBrick:
+    :x: 80.0
+    :y: 184.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BlueBrick:
+    :x: 48.0
+    :y: 200.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BrownBrick:
+    :x: 80.0
+    :y: 216.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- PurpleBrick:
+    :x: 48.0
+    :y: 248.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- PinkBrick:
+    :x: 80.0
+    :y: 232.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- OrangeBrick:
+    :x: 48.0
+    :y: 296.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- PinkBrick:
+    :x: 48.0
+    :y: 312.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BrownBrick:
+    :x: 80.0
+    :y: 280.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- PurpleBrick:
+    :x: 48.0
+    :y: 328.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- GreenBrick:
+    :x: 80.0
+    :y: 312.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BrownBrick:
+    :x: 672.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- BrownBrick:
+    :x: 704.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- PurpleBrick:
+    :x: 672.0
+    :y: 240.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- RedBrick:
+    :x: 704.0
+    :y: 240.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- PinkBrick:
+    :x: 736.0
+    :y: 224.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- PurpleBrick:
+    :x: 736.0
+    :y: 240.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- OrangeBrick:
+    :x: 672.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- PinkBrick:
+    :x: 704.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
+- YellowBrick:
+    :x: 736.0
+    :y: 256.0
+    :angle: 0
+    :zorder: 100
+    :factor_x: 1
+    :factor_y: 1
+    :alpha: 255
