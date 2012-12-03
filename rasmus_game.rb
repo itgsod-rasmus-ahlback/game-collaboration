@@ -38,7 +38,7 @@ class Player < Chingu::GameObject
 			holding_right: :right,
 			holding_up: :up,
 			holding_down: :down,
-			holding_space: :fire,
+			space: :fire,
 			holding_mouse_right: :make
 			}
 		@speed = 10

@@ -12,7 +12,15 @@ class MorganGame < Chingu::GameState
 		super
 		BackgroundBB.create
 		Logo.create(:x => 320, :y => 0, :image => "lib/logo.png")
-		SimpleMenu.create(:y => 200, :factor => 2, :menu_items => {"New Game" => :new, "Exit" => :exit})
+		SimpleMenu.create(:y => 600, :factor => 2, :menu_items => {"New Game" => :new, "Exit" => :back})
+	end
+
+	def back
+		pop_game_state
+	puts "objects before: #{game_objects.visible_game_objects}"
+	game_objects.destroy_all
+	puts "objects after: #{game_objects.visible_game_objects}"
+		switch_game_state(StartGame)
 	end
 	def new
 		$window.switch_game_state(MorganGame2)
@@ -31,13 +39,14 @@ end
 class MorganGame2 < Chingu::GameState
 	#Constructor
 	def initialize
+		@auto = true
 		@lock = false
 		@@windowX,  @@windowY = 800, 600
 		@@ball = false
 		@score = 0
 		super
 		load_game_objects(:file => "levels/level1.yml")
-		self.input = {esc: :back, e: :edit}
+		self.input = {esc: :back, e: :edit, a: :auto}
 
 		BackgroundBB.create(:zorder => 0)
 		Score.create(:x => 48, :y => 17, :image => "lib/score.png")
@@ -47,7 +56,13 @@ class MorganGame2 < Chingu::GameState
 	end
 
 
-
+	def auto
+		if @auto == true
+			@auto = false
+		else
+			@auto = true
+		end
+	end
 
 	def edit
 		push_game_state(GameStates::Edit.new( :file => "levels/level1.yml", :classes => [YellowBrick, PinkBrick, GreenBrick, OrangeBrick, RedBrick, BlueBrick, BrownBrick, PurpleBrick]))
@@ -62,12 +77,23 @@ class MorganGame2 < Chingu::GameState
 	end
 
 	def update
+
+		if $window.mouse_x < 0 then $window.mouse_x = 0 end
+		if $window.mouse_x > @@windowX then $window.mouse_x = @@windowX end
+
+		if $window.mouse_y < 0 then $window.mouse_y = 0 end
+		if $window.mouse_y > @@windowY then $window.mouse_y = @@windowY end
+
+
+
+
 		if YellowBrick.size == 0 and PinkBrick.size == 0 and GreenBrick.size == 0 and OrangeBrick.size == 0 and RedBrick.size == 0 and BlueBrick.size == 0 and BrownBrick.size == 0 and PurpleBrick.size == 0
 			if @lock == false then Text.create("Congratulations You Won!", :x => @@windowX/2, :y => @@windowY/2, :factor => 2) end
 				@lock = true
 			Ball.each do |kill_ball|
 				kill_ball.destroy
 			end
+			$window.switch_game_state(MorganGame2)
 		end
 		super
 
@@ -76,6 +102,12 @@ class MorganGame2 < Chingu::GameState
 			if powerup.power == 1 then @paddle.factor_x = 3 end #growthpower
 			if powerup.power == 2 then @paddle.factor_x = 1 end #Shrinkpower
 			powerup.destroy
+		end
+		if @auto == true
+			Ball.each do |ball|
+				@paddle.x = ball.x
+			end
+			$window.mouse_x = @paddle.x
 		end
 
 
@@ -107,7 +139,6 @@ class MorganGame2 < Chingu::GameState
 					Powerup.create(x: brick.x, y: brick.y)
 				end
 		end
-
 		@scoretext.destroy
 		@scoretext = Text.create(@score, :x => 145, :y => 9, :factor => 2, :zoder => 10)
 		$window.caption = "FPS: #{$window.fps} Score: #{@score}"
@@ -136,6 +167,7 @@ class Paddle < Chingu::GameObject
 		self.scale = 2
 		self.factor_x = 2
 		self.input = {mouse_left: :launch}
+		launch
 	end
 
 
@@ -169,7 +201,7 @@ class Paddle < Chingu::GameObject
 	def launch
 		if @@ball == false
 			Ball.create(x: self.x, y: self.y - 25, velocity_x: @vel)
-			@@ball = true
+			@@ball = false
 		end
 	end
 end
@@ -186,7 +218,7 @@ class Ball < Chingu::GameObject
 	end
 
 	def update
-		after(10) {@lock = false}
+		after(20) {@lock = false}
 		puts @lock
 		if self.y <= 0 + 111
 		self.velocity_y *= -1
@@ -204,6 +236,7 @@ class Ball < Chingu::GameObject
 	end
 
 	def bounce(x = 0)
+		if x == 0 then x = rand(-1..1) end
 		unless @lock
 			if x > 0 and x < 5
 				self.velocity_x += x
